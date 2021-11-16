@@ -16,9 +16,12 @@
 
 function anketa(){
     let first_name = prompt('Введите ваше имя')
-    for(; first_name === null || first_name === "";){
+    while(!first_name){
         first_name = prompt('Введите ваше имя КОРРЕКТНО!')
     }
+    // for(; first_name === null || first_name === "";){
+    //     first_name = prompt('Введите ваше имя КОРРЕКТНО!')
+    // }
     let last_name = prompt('Введите вашу фамилию')
     for(; last_name === null || last_name === "";){
         last_name = prompt('ВВедите коректно вашу фамилию!!!')
@@ -31,11 +34,12 @@ function anketa(){
     for(; Number.isNaN(age) || age === 0;){
         age = +prompt('Введите ваш возраст корректно')
     }
-    let gender = confirm('Вашпол мужской?')
-    if(gender = true){
-        gender = 'Мужской'
+    let gender = confirm('Вашпол мужской?') ? 'Мужской' : 'Женский'
+    let pensioner;
+    if(gender === true && age > 65 || !gender && age > 55 ) {
+        pensioner = 'да'
     }else{
-        gender = 'Женский'
+        pensioner = 'нет'
     }
     alert(`
     Ваше ФИО: ${last_name} ${first_name} ${patronymic}
@@ -43,6 +47,21 @@ function anketa(){
     Ваш возраст в днях: ${age * 365}
     Через 5 лет вам будет: ${age + 5}
     Ваш пол: ${gender}
-    Вы на пенсии:`)
+    Вы на пенсии: ${pensioner}`)
 }
 anketa()
+
+function getInfo(text){
+    let result = prompt(text);
+    return result;
+}
+function genderBoolen(){
+    let gender = confirm('Вашпол мужской?') ? 'Мужской' : 'Женский'
+}
+const init = () => {
+    const first_name = getInfo('Ваше имя')
+    const last_name = getInfo('Введите вашу фамилию')
+    let patronymic = getInfo('Введите ваше отчество')
+    let gender = confirm('Вашпол мужской?') ? 'Мужской' : 'Женский'
+
+}
