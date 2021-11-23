@@ -17,10 +17,14 @@
 let div = document.getElementsByClassName('www')[0]
 let p = [...div.querySelectorAll('p')]
 let pw = div.querySelector('p')
+let pw1 = div.querySelectorAll('p')
 
-console.log(pw)
 
+console.log(div)
 console.log(p)
+console.log(pw)
+console.log(pw1)
+
 // const arr = [1, 2, 3]
 // const arr1 = [5, 6, 7]
 // const marged = [0, ...arr, 4, ...arr1]
