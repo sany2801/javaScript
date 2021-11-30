@@ -27,11 +27,12 @@
 //     // console.log(event.currentTarget)
 // });
 
-
+const div = document.querySelector('#form')
 const inputTittle = document.querySelector('#tittle')
 const inputDiscription = document.querySelector('#discription')
 const form = document.querySelector('#form')
 const button = document.querySelector('#button')
+const data = []
 const obj = {
 title: '',
 discription: '',
@@ -43,8 +44,8 @@ button.addEventListener('click', () => {
     inputTittle.value = '';
     inputDiscription.value = '';
     console.log(obj)
-    form.innerHTML +=`<p>TITTLE: ${obj.title} <p>Discription: ${obj.discription}`
+    form.innerHTML +=`<p>TITTLE: ${obj.title} <p>Discription ${obj.discription}`
+    div.style.color = 'red'
+    div.style.border = '10px solid'  
+    data.push(obj)
 })
-// button.addEventListener('click', () => {
-
-// })

@@ -1,18 +1,18 @@
-// // const div = document.getElementById("lesson")
-// // const divByName = document.getElementsByName('dom')
-// // const divClassName = document.getElementsByClassName("wrapper")
-// // const divTagName = document.getElementsByTagName('div')
-// div.style.color = 'blue'
-// console.log(div)
-// console.log(divByName)
-// console.log(divClassName)
-// console.log(divTagName)
-// const div2 = document.getElementsByClassName("wrap")
-// console.log(div2)
-// let getElement = div2.querySelector('p')
-// let getAllElements = div2.querySelectorAll('p')
-// console.log(getElement)
-// console.log(getAllElements)
+const div = document.getElementById("lesson")
+const divByName = document.getElementsByName('dom')
+const divClassName = document.getElementsByClassName("wrapper")
+const divTagName = document.getElementsByTagName('div')
+div.style.color = 'blue'
+console.log(div)
+console.log(divByName)
+console.log(divClassName)
+console.log(divTagName)
+const div2 = document.getElementsByClassName("wrap")
+console.log(div2)
+let getElement = div2.querySelector('p')
+let getAllElements = div2.querySelectorAll('p')
+console.log(getElement)
+console.log(getAllElements)
 
 let div = document.getElementsByClassName('www')[0]
 let p = [...div.querySelectorAll('p')]
