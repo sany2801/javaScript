@@ -1,9 +1,13 @@
-const div = document.querySelector('#form')
+const todo = document.querySelector('#todoo')
 const tittle = document.querySelector('#tittle')
 const discription = document.querySelector('#discription')
 const button = document.querySelector('#button')
+
 let data = []
-button.addEventListener('click', () => {
+
+
+button.addEventListener('click', (event) => {
+event.preventDefault()
     const obj = {
         tittle: '',
         discription: '',
@@ -16,9 +20,18 @@ button.addEventListener('click', () => {
     data.push(obj)
     console.log(obj)
     console.log(data)
-    div.innerHTML = ''
+    todo.innerHTML = ''
     data.forEach(function(item){
-        div.innerHTML += `<p>Tittle: ${item.tittle}</p> <p>Discription${item.discription}</p>`
+        todo.innerHTML += 
+        `<div class = 'value'> 
+        <div>Tittle: ${item.tittle}</div> 
+        <div>Discription: ${item.discription}</div>
+        <div class = 'buttoncontrol'>
+        <button class = 'btnDelet'>Delete</button>
+        <button class = 'btnEdit'>Edit</button>
+        </div>
+        </div>`
+        
         })
 });
 
