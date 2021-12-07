@@ -1,4 +1,4 @@
-/* .card {
+.card {
   margin: 0.5rem;
   border: 2px solid black;
 }
@@ -15,7 +15,8 @@
   width: 200px;
   height: 200px;
   border: 1px solid black;
-  display: none; */
+  display: none;
+}
 .wrapper {
   display: none;
 }
@@ -50,4 +51,17 @@
   right: 1rem;
   width: 40px;
   height: 40px;
+}
+
+.todooList {
+  display: flex;
+  justify-content: space-around;
+}
+.form,
+.inprogres,
+.done,
+.deletetodo {
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px 5px 100px;
 }
