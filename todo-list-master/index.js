@@ -102,6 +102,11 @@ const tranferCardToAnotherList = (eventTarget, data) => {
     eventTarget,
     data
   );
+  //тоже самое
+  // const listId = commonVariables(eventTarget, data).listId;
+  // const deletedCard = commonVariables(eventTarget, data).deletedCard;
+  // const deletedCardIndex = commonVariables(eventTarget, data).deletedCardIndex;
+  
   const listsId = [...document.querySelectorAll(".list")].map(
     (list) => list.id
   );
