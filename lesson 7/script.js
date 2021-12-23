@@ -160,31 +160,31 @@
 
 // console.log(Array.prototype)
 
-// const example = document.querySelector(".exmpl");
-// console.log("offsetParent", example.offsetParent);
-// console.log("offsetLeft", example.offsetLeft);
-// console.log("offsetTop", example.offsetTop);
-// console.log("offsetWidth", example.offsetWidth);
-// console.log("offsetHeight", example.offsetHeight);
-// console.log("clientLeft", example.clientLeft);
-// console.log("clientTop", example.clientTop);
-// console.log("clientWidth", example.clientWidth);
-// console.log("clientHeight", example.clientHeight);
-// console.log("scrollWidth", example.scrollWidth);
-// console.log("scrollHeight", example.scrollHeight);
-// console.log("scrollLeft", example.scrollLeft);
-// console.log("scrollTop", example.scrollTop);
+const example = document.querySelector(".exmpl");
+console.log("offsetParent", example.offsetParent);
+console.log("offsetLeft", example.offsetLeft);
+console.log("offsetTop", example.offsetTop);
+console.log("offsetWidth", example.offsetWidth);
+console.log("offsetHeight", example.offsetHeight);
+console.log("clientLeft", example.clientLeft);
+console.log("clientTop", example.clientTop);
+console.log("clientWidth", example.clientWidth);
+console.log("clientHeight", example.clientHeight);
+console.log("scrollWidth", example.scrollWidth);
+console.log("scrollHeight", example.scrollHeight);
+console.log("scrollLeft", example.scrollLeft);
+console.log("scrollTop", example.scrollTop);
 
-// const scrollButton = document.querySelector('#scrollButton')
-// scrollButton.addEventListener('click', () =>{
-//     example.classList.toggle('active');
-//     if(example.classList.contains('active')){
-//         example.style.height = `${example.scrollHeight}px`;
-//     }else{
-//         example.style.height = `200px`;
+const scrollButton = document.querySelector('#scrollButton')
+scrollButton.addEventListener('click', () =>{
+    example.classList.toggle('active');
+    if(example.classList.contains('active')){
+        example.style.height = `${example.scrollHeight}px`;
+    }else{
+        example.style.height = `200px`;
 
-//     }
-// });
+    }
+});
 
 // console.log(document.documentElement.clientWidth)
 // console.log(document.documentElement.clientHeight)
@@ -213,28 +213,28 @@
 // заставляет браузер прокручивать элемент.
 
 
-// let scrollBy = document.querySelector('#scrollBy')
-// let scrollTo = document.querySelector('#scrollTo')
-// let scrollIntoViewTrue = document.querySelector('#scrollIntoViewTrue')
-// let scrollByFalse = document.querySelector('#scrollByFalse')
-// const red = document.querySelector('.red');
-// console.log(red.getBoundingClientRect());
+let scrollBy = document.querySelector('#scrollBy')
+let scrollTo = document.querySelector('#scrollTo')
+let scrollIntoViewTrue = document.querySelector('#scrollIntoViewTrue')
+let scrollByFalse = document.querySelector('#scrollByFalse')
+const red = document.querySelector('.red');
+console.log(red.getBoundingClientRect());
 
-// scrollBy.addEventListener("click", () => {
-//     window.scrollBy(0, 10);
-//   });
+scrollBy.addEventListener("click", () => {
+    window.scrollBy(0, 10);
+  });
   
-//   scrollTo.addEventListener("click", () => {
-//     window.scrollTo(0, 50);
-//   });
+  scrollTo.addEventListener("click", () => {
+    window.scrollTo(0, 50);
+  });
   
-//   scrollIntoViewTrue.addEventListener("click", () => {
-//     scrollIntoViewTrue.scrollIntoView();
-//   });
+  scrollIntoViewTrue.addEventListener("click", () => {
+    scrollIntoViewTrue.scrollIntoView();
+  });
   
-//   scrollByFalse.addEventListener("click", () => {
-//     scrollByFalse.scrollIntoView(false);
-//   });
+  scrollByFalse.addEventListener("click", () => {
+    scrollByFalse.scrollIntoView(false);
+  });
 // ============================== LocalStorage 
 // setItem(key, value) – сохранить пару ключ/значение.
 // getItem(key) – получить данные по ключу key.
