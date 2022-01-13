@@ -1,0 +1,9 @@
+.wrapper{
+    width: 500px;
+    height: 40px;
+    border: 1px solid black;
+    position: relative;
+}
+.wrapper2{
+ background-color: blue;
+}

@@ -74,12 +74,12 @@
 //     связывания this для этого вызова функции.
 // 4. Если ф-ция не возвращает свой альтернативный объект,
 //     вызов функции автоматически возвращает сконструированный объект.
-const foo = () =>{
-    console.log(this)
-    console.log(this.name)
-}
-var obj = {
-    name: 'Jak',
-    foo: foo,
-}
-obj.foo()
+// const foo = () =>{
+//     console.log(this)
+//     console.log(this.name)
+// }
+// var obj = {
+//     name: 'Jak',
+//     foo: foo,
+// }
+// obj.foo()
