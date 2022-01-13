@@ -146,7 +146,6 @@ const init = () => {
     done: [],
     deleted: [],
   };
-
   createCardButton.addEventListener("click", (event) => {
     event.preventDefault();
     createCard(data);

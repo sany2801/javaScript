@@ -93,16 +93,3 @@
 
 // const drinks = new Storage();
 
-const min = document.querySelector('.min')
-const max = document.querySelector('.max')
-const btn = document.querySelector('.button')
-const wrpr = document.querySelector('.wrapper')
-btn.addEventListener('click', () =>{
-    // <div class='wrapper2' style="width: ${+max.value} - ${+min.value};"></div>
-    wrpr.innerHTML = `<div class='wrapper2' style="
-    position: absolute;
-    width: ${max.value - min.value}%;
-    height: 100%;
-    left: ${min.value}%;
-    "></div>`
-})
