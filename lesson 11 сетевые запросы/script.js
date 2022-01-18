@@ -58,4 +58,3 @@ const func = async () =>{
     console.log(result.length)
 
 }
-func()
