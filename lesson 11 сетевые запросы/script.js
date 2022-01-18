@@ -48,39 +48,15 @@
 // }
 // func()
 
-
+const post = document.querySelector('.posr')
+const btn = document.querySelector('.button')
 const func = async () =>{
     let result;
     await fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response)=> response.json())
     .then((json) => (result = json));
-    const btn = document.querySelector('.button')
-    const post = document.querySelector('.post')
-    for(i=1; i <= result.length / 10; ++i){
-        btn.innerHTML += `
-        <button id = '${i*10}' class='buton ${i-1}'>${i}</button>`
-       }
-    
+    console.log(result.length)
 
-const draw = (index)=>{
-    let newResult = result.slice(index, index + 10)
-    post.innerHTML = "" 
-    newResult.forEach((element)=>{
-        post.innerHTML +=`
-        <p>Id: ${element.id}</p>
-        <p>Tittle: ${element.title}</p>
-        `
-    })
-}
-console.log(btn)
-btn.addEventListener('click', (event)=>{    
-    console.log(event.target.id)
-    btnId = event.target.id
-    console.log(btnId)
-    draw(btnId - 10, btnId)
-})
 }
 func()
-
-
 
