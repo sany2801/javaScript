@@ -86,10 +86,14 @@
 
 //   getKeys() {}
 
+
+
+
+
+
 //   deleteValue(key) {}
 
 //   reset() {}
 // }
 
 // const drinks = new Storage();
-
