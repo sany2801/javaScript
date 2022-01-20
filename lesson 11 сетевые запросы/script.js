@@ -60,7 +60,8 @@ const func = async () =>{
         btn.innerHTML += `
         <button id = '${i*10}' class='buton ${i-1}'>${i}</button>`
        }
-    
+  let button = document.querySelectorAll('.buton')
+  console.log(...button)
 
 const draw = (index)=>{
     let newResult = result.slice(index, index + 10)
